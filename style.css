@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:600');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: block;
+  flex-align: center;
+  flex-pack: center;
+  background-color:  #660080;
+  transition: background 0.5s ease;
+}
+
+.crackCode {
+  margin-top: 150px;
+  text-align: center;
+  position: relative;
+}
+
+
+h1{
+
+  padding:20px;
+  margin:20px;
+
+}
+
+.beautify{
+  font-family: 'Exo', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #290033;
+  text-shadow: 0 0 10px #f5ccff;
+}
+
+.enterCode{
+  display: inline-block;
+
+}
+
+.cif {
+  padding: 20px;
+  margin: 20px;
+  width: 80px;
+  height: 90px;
+  font-size: 50px;
+  font-family: 'Exo', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  border: 2px solid #290033;
+  box-shadow: inset 0 0 3px 3px #290033;
+  outline: none;
+
+}
+
+.hl1,
+.hl2,
+.hl3,
+.hl4{
+  font-family: 'Exo', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #f5ccff;
+  text-shadow: 0 0 10px #290033;
+}
+
+
+
+.cButton{
+  position:relative;
+  height:40px;
+  width:100px;
+  padding-bottom: 10px;
+  margin:20px;
+  font-size: 27px;
+  font-weight: bold;
+  font-family: 'Exo', sans-serif;
+  color: #290033;
+  font-weight: 700;
+  text-align: center;
+  background-color: #f5ccff;
+  vertical-align: middle;
+  border: 2px solid black;
+  border: 2px solid #290033;
+  box-shadow:   0 0 3px 3px #290033;
+  outline: none;
+
+}
+
+h3{
+  padding:20px;
+  margin:10px;
+  font-family: 'Exo', sans-serif;
+  font-weight: 900;
+  font-size: 25px;
+  color: #290033;
+  text-shadow: 0 0 5px #f5ccff;
+}
