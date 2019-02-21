@@ -13,19 +13,19 @@ var cif4 = document.getElementById("cif4");
 var cButton = document.getElementById("cButton");
 var mssg = document.getElementById("mssg");
 
+
+
 cButton.addEventListener("click", function countClicks(){
     if(count == 4){
       changeBkgr('#290033');
+      cButton.disabled = "true";
       mssg.innerHTML = "Cracked it!!!";
     } else {
-          clickCount += 1;
-          if(clickCount == 1){
-            mssg.innerHTML = "Try again!";
-          } else {
-          var arrMssg = ["For fuck's sake!", "Oh come on!", "Really???"];
+
+          var arrMssg = ["You can do it!", "For fuck's sake!", "Oh come on!", "Really???"];
           var rndmMssg = Math.floor(Math.random()*arrMssg.length);
           mssg.innerHTML = arrMssg[rndmMssg];
-          }
+
     }
   })
 
@@ -37,6 +37,10 @@ for(var x = 0; x < 4; x++){
 function crack(){
 
   var guess = [cif1.value, cif2.value, cif3.value, cif4.value];
+  if(guess[0] == enterNum[0]){cif1.disabled = "True";}
+  if(guess[1] == enterNum[1]){cif2.disabled = "True";}
+  if(guess[2] == enterNum[2]){cif3.disabled = "True";}
+  if(guess[3] == enterNum[3]){cif4.disabled = "True";}
   if(hl1.innerHTML != 'Correct!'){ hl1.innerHTML = checkCif(guess[0], enterNum[0]); }
   if(hl2.innerHTML != 'Correct!'){ hl2.innerHTML = checkCif(guess[1], enterNum[1]); }
   if(hl3.innerHTML != 'Correct!'){ hl3.innerHTML = checkCif(guess[2], enterNum[2]); }
