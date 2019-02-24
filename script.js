@@ -12,19 +12,22 @@ var cif3 = document.getElementById("cif3");
 var cif4 = document.getElementById("cif4");
 var cButton = document.getElementById("cButton");
 var mssg = document.getElementById("mssg");
-
+var instruct = document.getElementById("instruct");
 
 
 cButton.addEventListener("click", function countClicks(){
     if(count == 4){
-      changeBkgr('#290033');
-      cButton.disabled = "true";
+      document.body.style.background = "#290033";
+      cButton.remove();
+      instruct.remove();
       mssg.innerHTML = "Cracked it!!!";
     } else {
-
+          if((cif1.value != "") && (cif2.value != "") && (cif3.value != "") && (cif4.value != "") ){
           var arrMssg = ["You can do it!", "For fuck's sake!", "Oh come on!", "Really???"];
           var rndmMssg = Math.floor(Math.random()*arrMssg.length);
           mssg.innerHTML = arrMssg[rndmMssg];
+          return true;
+          }
 
     }
   })
@@ -37,14 +40,17 @@ for(var x = 0; x < 4; x++){
 function crack(){
 
   var guess = [cif1.value, cif2.value, cif3.value, cif4.value];
-  if(guess[0] == enterNum[0]){cif1.disabled = "True";}
-  if(guess[1] == enterNum[1]){cif2.disabled = "True";}
-  if(guess[2] == enterNum[2]){cif3.disabled = "True";}
-  if(guess[3] == enterNum[3]){cif4.disabled = "True";}
-  if(hl1.innerHTML != 'Correct!'){ hl1.innerHTML = checkCif(guess[0], enterNum[0]); }
-  if(hl2.innerHTML != 'Correct!'){ hl2.innerHTML = checkCif(guess[1], enterNum[1]); }
-  if(hl3.innerHTML != 'Correct!'){ hl3.innerHTML = checkCif(guess[2], enterNum[2]); }
-  if(hl4.innerHTML != 'Correct!'){ hl4.innerHTML = checkCif(guess[3], enterNum[3]); }
+  if((guess[0] != "") && (guess[1] != "") && (guess[2] != "") && (guess[3] != "")){
+    if(guess[0] == enterNum[0]){cif1.disabled = "True";}
+    if(guess[1] == enterNum[1]){cif2.disabled = "True";}
+    if(guess[2] == enterNum[2]){cif3.disabled = "True";}
+    if(guess[3] == enterNum[3]){cif4.disabled = "True";}
+    if(hl1.innerHTML != 'Correct!'){ hl1.innerHTML = checkCif(guess[0], enterNum[0]); }
+    if(hl2.innerHTML != 'Correct!'){ hl2.innerHTML = checkCif(guess[1], enterNum[1]); }
+    if(hl3.innerHTML != 'Correct!'){ hl3.innerHTML = checkCif(guess[2], enterNum[2]); }
+    if(hl4.innerHTML != 'Correct!'){ hl4.innerHTML = checkCif(guess[3], enterNum[3]); }
+    return true;
+  }
 
 }
 
@@ -57,9 +63,4 @@ function checkCif(a, b){
     return "Correct!";
 
   }
-}
-
-
-function changeBkgr (color){
-  document.body.style.background = color;
 }

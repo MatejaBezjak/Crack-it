@@ -6,35 +6,37 @@
 
   </head>
     <body>
+
+      
       <div class = "crackCode">
 
 
            <h1>IN ORDER TO ENTER <br> YOU MUST FIRST CRACK THE CODE!</h1>
 
          <div class= "enterCode">
-           <input class = "cif" type = "text" id = "cif1" maxlength = "1">
+           <input class = "cif" type = "text" id = "cif1" onfocus = "this.value = ''" maxlength = "1">
            <p class= "hl1" id="hl1">*</p>
          </div>
 
          <div class= "enterCode">
-           <input class = "cif" type = "text" id = "cif2" maxlength = "1">
+           <input class = "cif" type = "text" id = "cif2" onfocus = "this.value = ''" maxlength = "1">
            <p class= "hl2" id="hl2">*</p>
          </div>
 
          <div class= "enterCode">
-           <input class = "cif" type = "text" id = "cif3" maxlength = "1">
+           <input class = "cif" type = "text" id = "cif3" onfocus = "this.value = ''" maxlength = "1">
            <p class= "hl3" id="hl3">*</p>
          </div>
 
          <div class= "enterCode">
-           <input class = "cif" type = "text" id = "cif4" maxlength = "1">
+           <input class = "cif" type = "text" id = "cif4" onfocus = "this.value = ''" maxlength = "1">
            <p class= "hl4" id="hl4">*</p>
          </div>
 
 
            <br>
            <input type = "button" onClick = "crack()" id = "cButton" class="cButton" value = "Crack">
-           <h3>CHOOSE YOUR NUMBERS FROM 0 TO 5</h3>
+           <h3 id= "instruct">CHOOSE YOUR NUMBERS FROM 0 TO 5</h3>
            <h3 id="mssg">LET'S SEE...</h3>
 
 

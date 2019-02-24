@@ -9,8 +9,9 @@ body {
   display: block;
   flex-align: center;
   flex-pack: center;
-  background-color:  #660080;
-  transition: background 0.5s ease;
+  background-color:  #4d4d4d;
+  transition: background-image 0.7s ease;
+
 }
 
 .crackCode {
@@ -95,9 +96,11 @@ h1{
 
 }
 
-.cButton:hover {
+.cButton:hover{
   background-color:  #e699ff;
 }
+
+
 h3{
   padding:20px;
   margin:10px;
