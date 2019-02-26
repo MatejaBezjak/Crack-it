@@ -2,6 +2,7 @@ var enterNum = [];
 var count = 0;
 var clickCount = 0;
 
+var mainTtl = document.getElementById("mainTtl");
 var hl1 = document.getElementById("hl1");
 var hl2 = document.getElementById("hl2");
 var hl3 = document.getElementById("hl3");
@@ -17,10 +18,15 @@ var instruct = document.getElementById("instruct");
 
 cButton.addEventListener("click", function countClicks(){
     if(count == 4){
-      document.body.style.background = "#290033";
+
+      document.body.style.background = "#e68a00";
+      mainTtl.innerHTML = "THAT'S THAT FOR NOW <br> TO BE CONTINUED ...";
+      mainTtl.style.color = "#001a00";
       cButton.remove();
       instruct.remove();
       mssg.innerHTML = "Cracked it!!!";
+      mssg.style.color = "#99ff66";
+
     } else {
           if((cif1.value != "") && (cif2.value != "") && (cif3.value != "") && (cif4.value != "") ){
           var arrMssg = ["You can do it!", "For fuck's sake!", "Oh come on!", "Really???"];

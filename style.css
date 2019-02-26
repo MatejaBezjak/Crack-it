@@ -9,8 +9,8 @@ body {
   display: block;
   flex-align: center;
   flex-pack: center;
-  background-color:  #4d4d4d;
-  transition: background-image 0.7s ease;
+  background-color:  #000000;
+  transition: background-image 0.9s ease;
 
 }
 
@@ -28,8 +28,8 @@ h1{
   font-family: 'Exo', sans-serif;
   font-weight: 700;
   font-size: 40px;
-  color: #290033;
-  text-shadow: 0 0 10px #f5ccff;
+  color: #ff9900;
+  text-shadow: 0 0 5px #59b300;
 
 }
 
@@ -49,18 +49,20 @@ h1{
   font-weight: 700;
   text-align: center;
   vertical-align: middle;
-  border: 2px solid #290033;
-  box-shadow: inset 0 0 3px 3px #290033;
+  border: 2px solid #ffffff;
+  box-shadow: inset 0 0 3px 3px #001a00;
   outline: 0 none;
   transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
 
 }
 
 .cif:focus {
-  border-color: #ffb3ff;
-  box-shadow: 0 1px 1px #ff80ff inset, 0 0 8px #ffb3ff;
+  border-color: #e68a00;
+  box-shadow: 0 1px 1px #ff80ff inset, 0 0 8px #e68a00;
   outline: 0 none;
 }
+
+
 
 .hl1,
 .hl2,
@@ -69,8 +71,9 @@ h1{
   font-family: 'Exo', sans-serif;
   font-weight: 700;
   font-size: 25px;
-  color: #f5ccff;
-  text-shadow: 0 0 10px #290033;
+  color: #99ff66;
+  text-shadow: 0 0 1px #00cc00;
+
 }
 
 
@@ -84,20 +87,20 @@ h1{
   font-size: 27px;
   font-weight: bold;
   font-family: 'Exo', sans-serif;
-  color: #290033;
-  font-weight: 700;
+  color: #e68a00;
+  font-weight: 900;
   text-align: center;
-  background-color: #f5ccff;
+  background-color: #fff5e6;
   vertical-align: middle;
-  border: 2px solid black;
-  border: 2px solid #290033;
+  border: 2px solid #e68a00;
   box-shadow:   0 0 3px 3px #290033;
   outline: none;
 
 }
 
 .cButton:hover{
-  background-color:  #e699ff;
+  background-color: #ff9900;
+  color: #fff5e6;
 }
 
 
@@ -107,6 +110,7 @@ h3{
   font-family: 'Exo', sans-serif;
   font-weight: 900;
   font-size: 25px;
-  color: #290033;
-  text-shadow: 0 0 5px #f5ccff;
+  color: #ff9900;
+  text-shadow: 0 0 3px #59b300;
+
 }
