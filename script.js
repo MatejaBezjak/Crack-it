@@ -19,13 +19,13 @@ var instruct = document.getElementById("instruct");
 cButton.addEventListener("click", function countClicks(){
     if(count == 4){
 
-      document.body.style.background = "#e68a00";
+      document.body.style.background = "#ddab4a";
       mainTtl.innerHTML = "THAT'S THAT FOR NOW <br> TO BE CONTINUED ...";
-      mainTtl.style.color = "#001a00";
+      mainTtl.style.color = "#003049";
       cButton.remove();
       instruct.remove();
       mssg.innerHTML = "Cracked it!!!";
-      mssg.style.color = "#99ff66";
+      mssg.style.color = "#003049";
 
     } else {
           if((cif1.value != "") && (cif2.value != "") && (cif3.value != "") && (cif4.value != "") ){
