@@ -1,6 +1,5 @@
 var enterNum = [];
 var count = 0;
-var clickCount = 0;
 
 var mainTtl = document.getElementById("mainTtl");
 var hl1 = document.getElementById("hl1");
@@ -16,10 +15,10 @@ var mssg = document.getElementById("mssg");
 var instruct = document.getElementById("instruct");
 
 
-cButton.addEventListener("click", function countClicks(){
+cButton.addEventListener("click", function (){
     if(count == 4){
 
-      document.body.style.background = "#ddab4a";
+      document.body.style.background = "#bb672e";
       mainTtl.innerHTML = "THAT'S THAT FOR NOW <br> TO BE CONTINUED ...";
       mainTtl.style.color = "#003049";
       cButton.remove();

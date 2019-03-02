@@ -58,7 +58,7 @@ h1{
 }
 
 .cif:focus {
-  border-color: #d62828;
+  border-color: #ff7417;
   box-shadow: 0 1px 1px #003049 inset, 0 0 8px #003049;
   outline: 0 none;
 }
@@ -87,18 +87,18 @@ h1{
   font-size: 27px;
   font-weight: bold;
   font-family: 'Roboto', sans-serif;
-  color: #d62828;
+  color: #ff7417;
   font-weight: 900;
   text-align: center;
   background-color: #fff5e6;
   vertical-align: middle;
-  border: 2px solid #d62828;
+  border: 2px solid #ff7417;
   outline: none;
 
 }
 
 .cButton:hover{
-  background-color: #d62828;
+  background-color: #ff7417;
   color: #eae2b7;
 }
 
